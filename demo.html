@@ -1,15 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My Demo Site</title>  
-<link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From Code to Cloud</title>
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 <body>
 
-<div class="main">
-  <h1>Hello Friend! You have arrived at my demo site! Thank you for reading my Substack article!</h1>
-  <p>Welcome!</p>
-</div>
+  <header>
+    <h1>From Code to Cloud</h1>
+    <p class="tagline">A simple demo: code it, containerize it, deploy it.</p>
+  </header>
+
+  <main class="main">
+    <section class="steps">
+      <div class="card">
+        <span class="icon">💻</span>
+        <h2>1. Write the Code</h2>
+        <p>Start with a simple HTML website.</p>
+      </div>
+      <div class="card">
+        <span class="icon">🐳</span>
+        <h2>2. Containerize</h2>
+        <p>Package it with Docker using GitHub Actions.</p>
+      </div>
+      <div class="card">
+        <span class="icon">☁️</span>
+        <h2>3. Deploy</h2>
+        <p>Push to a Kubernetes cluster.</p>
+      </div>
+      <div class="card">
+        <span class="icon">🌐</span>
+        <h2>4. Expose</h2>
+        <p>Route traffic with Traefik ingress.</p>
+      </div>
+    </section>
+
+    <a class="cta" href="https://jmcglock.substack.com/from-code-to-cloud" target="_blank" rel="noopener noreferrer">
+      Read the full walkthrough on Substack
+    </a>
+  </main>
+
+  <footer>
+    <p>jmcglock &mdash; 2026</p>
+  </footer>
 
 </body>
 </html>

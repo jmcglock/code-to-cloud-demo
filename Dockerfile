@@ -1,6 +1,6 @@
-FROM nginx:stable-alpine
+FROM nginx:1.27-alpine
 
-# Copy the static content to the container
+# Copy static content
 COPY styles.css /usr/share/nginx/html/css/styles.css
 COPY demo.html /usr/share/nginx/html/index.html
 
@@ -11,3 +11,5 @@ RUN touch /var/run/nginx.pid && \
     chown -R nginx:nginx /usr/share/nginx/html
 
 USER nginx
+
+EXPOSE 80
