@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v6
       - name: Build Docker Image
         run: |
           docker build --platform linux/amd64 -t jmcglock/from-code-to-cloud:latest .
