@@ -1,4 +1,4 @@
-FROM nginx:1.31.2-alpine
+FROM nginx:1.31.3-alpine
 
 # Copy static content
 COPY styles.css /usr/share/nginx/html/css/styles.css
